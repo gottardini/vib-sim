@@ -61,27 +61,6 @@ if __name__=="__main__":
             counter+=2
 
         UI.simulate(simulation.objects,result.t)
-        #x = array(result.y[0])
-        #xd = array(result.y[1])
-
-        """
-        # Plotting displacement and velocity
-        pylab.rcParams['figure.figsize'] = (15, 12)
-        pylab.rcParams['font.size'] = 18
-
-        fig, ax1 = pylab.subplots()
-        ax2 = ax1.twinx()
-        ax1.plot(result.t,x*1e3,'b',label = r'$x (mm)$', linewidth=2.0)
-        ax2.plot(result.t,xd,'g--',label = r'$\dot{x} (m/sec)$', linewidth=2.0)
-        ax2.legend(loc='lower right')
-        ax1.legend()
-        ax1.set_xlabel('time , sec')
-        ax1.set_ylabel('disp (mm)',color='b')
-        ax2.set_ylabel('velocity (m/s)',color='g')
-
-        pylab.grid()
-        pylab.show()
-        """
     else:
         print("\nInvalid setup\n")
         sys.exit()

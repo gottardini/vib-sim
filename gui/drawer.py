@@ -34,8 +34,5 @@ def drawSpring(screen, coords, l0, k):
     vecY=np.add(np.multiply(vecY,springHeight/2),planePos-massSize[1]/2)
     points=np.array((vecX,vecY)).T
     points=list(map(tuple, points))
-    #print(points)
 
     pygame.draw.aalines(screen, (0,0,0), False, points)
-
-    #pygame.draw.line(screen, (0,0,0), [coords[0]+200, planePos-massSize[1]//2], [coords[1]+200, planePos-massSize[1]//2], 2)

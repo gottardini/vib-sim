@@ -54,7 +54,4 @@ def validateSetup(s):
         if forcingObj.link in masses:
             masses[forcingObj.link].forcings.append(forcingObj)
 
-    print(masses["M1"].springs,masses["M1"].dampers)
-
-    #return False
     return {"walls":walls,"masses":masses,"springs":springs,"dampers":dampers,"forcings":forcings}
